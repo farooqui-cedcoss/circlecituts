@@ -28,6 +28,9 @@ jobs:
       - run:
           name: Run tests
           command: npm test --passWithNoTests
+      - run:
+          name: Install dependencies
+          command: npm install
   build-node:
     # Build node project
     executor: node/default
